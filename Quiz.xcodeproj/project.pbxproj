@@ -11,6 +11,8 @@
 		CE9A216B2085D8A700EB8962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9A216A2085D8A700EB8962 /* Assets.xcassets */; };
 		CE9A216E2085D8A700EB8962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9A216C2085D8A700EB8962 /* LaunchScreen.storyboard */; };
 		CE9A21712085D8A700EB8962 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9A21702085D8A700EB8962 /* main.m */; };
+		CE9A217B2085DABF00EB8962 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9A21792085DABF00EB8962 /* QuizViewController.m */; };
+		CE9A217C2085DABF00EB8962 /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9A217A2085DABF00EB8962 /* QuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		CE9A216D2085D8A700EB8962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9A216F2085D8A700EB8962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9A21702085D8A700EB8962 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE9A21782085DABF00EB8962 /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		CE9A21792085DABF00EB8962 /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		CE9A217A2085DABF00EB8962 /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +61,22 @@
 				CE9A21672085D8A500EB8962 /* AppDelegate.h */,
 				CE9A21682085D8A500EB8962 /* AppDelegate.m */,
 				CE9A216A2085D8A700EB8962 /* Assets.xcassets */,
-				CE9A216C2085D8A700EB8962 /* LaunchScreen.storyboard */,
-				CE9A216F2085D8A700EB8962 /* Info.plist */,
+				CE9A21782085DABF00EB8962 /* QuizViewController.h */,
+				CE9A21792085DABF00EB8962 /* QuizViewController.m */,
+				CE9A217A2085DABF00EB8962 /* QuizViewController.xib */,
 				CE9A21702085D8A700EB8962 /* main.m */,
+				CE9A216F2085D8A700EB8962 /* Info.plist */,
+				CE9A216C2085D8A700EB8962 /* LaunchScreen.storyboard */,
+				CE9A21772085D93C00EB8962 /* Supporting Files */,
 			);
 			path = Quiz;
+			sourceTree = "<group>";
+		};
+		CE9A21772085D93C00EB8962 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +138,7 @@
 			files = (
 				CE9A216B2085D8A700EB8962 /* Assets.xcassets in Resources */,
 				CE9A216E2085D8A700EB8962 /* LaunchScreen.storyboard in Resources */,
+				CE9A217C2085DABF00EB8962 /* QuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +151,7 @@
 			files = (
 				CE9A21712085D8A700EB8962 /* main.m in Sources */,
 				CE9A21692085D8A500EB8962 /* AppDelegate.m in Sources */,
+				CE9A217B2085DABF00EB8962 /* QuizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +291,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = StudyTest.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,7 +307,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = StudyTest.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
